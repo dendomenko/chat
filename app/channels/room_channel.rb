@@ -9,6 +9,6 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-	Message.create! content: "#{DateTime.now.to_s}: #{data['message']}"
+	Message.create! content: "#{DateTime.now.to_s}: #{data['message']}" if data['message']!=''
   end
 end

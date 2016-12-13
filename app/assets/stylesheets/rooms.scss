@@ -1,3 +1,19 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+#messages {
+  width: 60%;
+  height: 100%;
+  outline: 1px solid darkcyan;
+  opacity: 1 !important;
+
+}
+body {
+  background-color: aquamarine;
+}
+
+#msg {
+  width: 100%;
+}
