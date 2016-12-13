@@ -20,6 +20,7 @@ $(document).on 'keypress', '[data-behavior~=room_speaker]', (event) ->
     event.preventDefault()
 
 $(document).ready  ->
+  $('#messages').scrollTop $('#messages')[0].scrollHeight
   $('#send').on 'click', (e) ->
     e.preventDefault()
     App.room.speak $('#msg').val()
