@@ -37,7 +37,7 @@ Rails.application.configure do
   # Mount Action Cable outside main process or domain
   # config.action_cable.mount_path = nil
   config.action_cable.url = 'wss://ant-hillchat.herokuapp.com/cable'
-  config.action_cable.allowed_request_origins = ['https://ant-hillchat.herokuapp.com', 'http://ant-hillchat.herokuapp.com' ]
+  config.action_cable.allowed_request_origins = [ 'http://ant-hillchat.herokuapp.com', /http:\/\/ant-hillchat.herokuapp.*/ ]
   # config.web_socket_server_url = 'wss://ant-hillchat.herokuapp.com/cable'
   # config.action_cable.allowed_request_origins = ['https://ant-hillchat.herokuapp.com', 'http://ant-hillchat.herokuapp.com']
   
