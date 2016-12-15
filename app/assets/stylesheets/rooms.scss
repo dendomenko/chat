@@ -3,18 +3,34 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "bootstrap";
 
-#messages {
-  width: 60%;
-  height: 100%;
-  outline: 1px solid darkcyan;
-  opacity: 1 !important;
-
+.block {
+  width: 50%;
+  //height: 100%;
+  //outline: 1px solid darkcyan;
+  border-radius: 8px;
+  //background-color: #ffffff;
+}
+#messages{
+  border-radius: 8px;
+  border: 3px solid cadetblue;
+  background-color: #ffffff;
+  max-height: 50rem;
+  overflow-y: scroll;
 }
 body {
-  background-color: aquamarine;
+  background-color: #e9ebee;
   overflow-x: hidden;
 }
 
 #msg {
-  width: 100%;
+  width: 79%;
+  display: inline-flex;
 }
+.btn{
+  width: 20%;
+}
+.message{
+  font-size: 16px;
+
+}
+

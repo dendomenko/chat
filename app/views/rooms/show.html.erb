@@ -1,15 +1,16 @@
 <h1 class="text-center">AntHill! chat:</h1>
-<form class="text-center" role="form">
-  <div class="center-block form-group" style="width: 50%">
-    <label>Your message:</label><br>
-    <input id="msg" class="form-control" type="text" data-behavior="room_speaker">
-    <button class="btn btn btn-default btn-lg" id="send">send</button>
-  </div>
-</form>
-<div class="row">
-  <div id="messages" class="center-block pre-scrollable">
+
+<!--<div class="row">-->
+  <div id="messages" class="center-block  block">
     <%= render @messages %>
   </div>
+<!--</div>-->
+<br>
+<div class="center-block form-group block" >
+  <form class="text-center" role="form">
+    <input id="msg" class="form-control" type="text" data-behavior="room_speaker">
+    <button class="btn btn btn-success btn-md" id="send">SEND</button>
+  </form>
 </div>
 
 

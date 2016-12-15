@@ -9,6 +9,8 @@ class RoomChannel < ApplicationCable::Channel
   end
 
   def speak(data)
-	Message.create! content: "#{DateTime.now.to_s}: #{data['message']}" unless data['message'].blank?
+    date = DateTime.now.in_time_zone.to_s
+    date = date[0..-6]
+    Message.create! content: "#{date}: #{data['message']}" unless data['message'].blank?
   end
 end
