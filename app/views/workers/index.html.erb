@@ -6,6 +6,8 @@
     <th>Name</th>
     <th>Surname</th>
     <th>Phone</th>
+    <th>Id</th>
+
     <th colspan="5"></th>
   </tr>
   </thead>
@@ -16,6 +18,11 @@
         <td><%= worker.name %></td>
         <td><%= worker.surname %></td>
         <td><%= worker.phone %></td>
+        <td><%= worker.id %></td>
+        <td><%= link_to 'Show', worker %></td>
+
+        <td><%= link_to 'Destroy', worker, method: :delete %></td>
+
       </tr>
   <% end %>
   </tbody>
