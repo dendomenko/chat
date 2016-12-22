@@ -1,14 +1,15 @@
-<h1>Workers</h1>
+<h1 class="text-center">Workers</h1>
 
-<table>
+<div class="container">
+<table class="table">
   <thead>
   <tr>
     <th>Name</th>
     <th>Surname</th>
     <th>Phone</th>
-    <th>Id</th>
+    <!--<th>Id</th>-->
 
-    <th colspan="5"></th>
+    <th colspan="2"></th>
   </tr>
   </thead>
 
@@ -18,10 +19,10 @@
         <td><%= worker.name %></td>
         <td><%= worker.surname %></td>
         <td><%= worker.phone %></td>
-        <td><%= worker.id %></td>
-        <td><%= link_to 'Show', worker %></td>
-
-        <td><%= link_to 'Destroy', worker, method: :delete %></td>
+        <!--<td><%= worker.id %></td>-->
+        <td><%= link_to 'Show', worker, class: 'btn btn-sm btn-default' %></td>
+        <td><%= link_to 'Edit', edit_worker_path(worker), class: 'btn btn-sm btn-default' %></td>
+        <td><%= link_to 'Destroy', worker, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-default'  %></td>
 
       </tr>
   <% end %>
@@ -30,4 +31,5 @@
 
 <br>
 
-<%= link_to 'New Worker', new_worker_path %>
+<%= link_to 'New Worker', new_worker_path ,class: 'btn btn-default' %>
+</div>

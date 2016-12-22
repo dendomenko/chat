@@ -1,6 +1,7 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
 .block {
@@ -10,13 +11,15 @@
   border-radius: 8px;
   //background-color: #ffffff;
 }
-#messages{
+
+#messages {
   border-radius: 8px;
   border: 3px solid cadetblue;
   background-color: #ffffff;
   max-height: 50rem;
   overflow-y: scroll;
 }
+
 body {
   background-color: #e9ebee;
   overflow-x: hidden;
@@ -26,11 +29,21 @@ body {
   width: 79%;
   display: inline-flex;
 }
-.btn{
-  width: 20%;
+
+.w20 {
+  width: 20% !important;
 }
-.message{
+
+.message {
   font-size: 16px;
 
+}
+
+#phones {
+  //display: inline-block;
+}
+
+.data {
+  //display: inline-block;
 }
 

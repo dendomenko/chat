@@ -1,4 +1,11 @@
-<p id="notice"><%= notice %></p>
+<h1 class="text-center"><%= "#{@worker.surname} #{@worker.name}" %></h1>
+<p class="text-center text-success" id="notice"><%= notice %></p>
 
-<%= @worker.name %>
-<%= link_to 'Back', workers_path %>
+<div class="container">
+  <p>
+    <span class="glyphicon glyphicon-phone"></span>
+    Phone number:
+    <%= @worker.phone %>
+  </p>
+  <%= link_to 'Back', workers_path, class: 'btn btn-default' %>
+</div>
