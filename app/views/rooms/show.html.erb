@@ -2,7 +2,7 @@
 
 <!--<div class="row">-->
 <div class="data">
-  <div id="messages" class="center-block  block">
+  <div id="messages" class="center-block  block" tabindex="3">
     <%= render @messages %>
   </div>
   <!--<div id="phones">-->
@@ -12,8 +12,8 @@
 <br>
 <div class="center-block form-group block">
   <form class="text-center" role="form">
-    <input id="msg" class="form-control" type="text" data-behavior="room_speaker">
-    <button class="btn w20 btn-success btn-md" id="send">SEND</button>
+    <input id="msg" class="form-control" type="text" data-behavior="room_speaker" tabindex="1">
+    <button class="btn w20 btn-success btn-md" id="send" tabindex="2">SEND</button>
   </form>
 </div>
 </div>
