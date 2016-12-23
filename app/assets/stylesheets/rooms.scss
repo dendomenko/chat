@@ -40,7 +40,15 @@ body {
 }
 
 #phones {
-  //display: inline-block;
+  position: absolute;
+  border-radius: 8px;
+  border: 3px solid cadetblue;
+  background-color: #ffffff;
+  max-height: 50rem;
+  width: 20%;
+  overflow-y: scroll;
+  padding-left: 10px;
+  margin-left: 2.5%;
 }
 
 .data {

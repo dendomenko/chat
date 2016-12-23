@@ -1,14 +1,13 @@
 <h1 class="text-center">AntHill! chat:</h1>
 
-<!--<div class="row">-->
+
 <div class="data">
+  <div id="phones">
+    <%= render @phones %>
+  </div>
   <div id="messages" class="center-block  block" tabindex="3">
     <%= render @messages %>
   </div>
-  <!--<div id="phones">-->
-    <!--<%= render @phones %>-->
-  <!--</div>-->
-<!--</div>-->
 <br>
 <div class="center-block form-group block">
   <form class="text-center" role="form">
