@@ -1,0 +1,20 @@
+= render 'layouts/header'
+%h2.text-center PAGE FORM FOR REVIEW
+.container
+  .form{:class => 'row', :style => 'width:600px;'}
+    %form{:method => 'post', :action=>"#{reviews_path}"}
+      .name{:class=>'form-group'}
+        %h4 ENTER NAME OF REVIEW
+        %input{:name=>'name'}
+      .review{:class=>'form-group'}
+        %h4 ENTER REVIEW
+        %textarea{:name=>'description'}
+      .worker
+        %h4 CHOOSE WORKER:
+        %select{:name=>'worker_id'}
+          -@workers.each do |worker|
+            %option{:value => "#{worker.id}"}=worker.name
+      .status{:class=>'form-group'}
+        %h4 CLASS (GOOD/BAD)
+        %input.class{:name=>'class', :type=>'checkbox'} GOOD
+      %input{:type => 'submit', :value => 'SEND'}

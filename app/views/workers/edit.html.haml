@@ -1,0 +1,5 @@
+= render 'layouts/header'
+%h1.text-center Editing User
+.container
+  = render 'form', worker: @worker
+  = link_to 'Back', workers_path, class: 'btn btn-default'

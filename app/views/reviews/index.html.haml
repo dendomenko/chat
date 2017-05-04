@@ -1,0 +1,16 @@
+= render 'layouts/header'
+-#
+%h2.text-center PAGE FORM FOR REVIEW
+.container
+  .row
+    = link_to  'NEW REVIEW' ,new_review_path
+  .reviews
+    %h3 REVIEWS
+    - @reviews.each do |review|
+      .review
+        %strong= Worker.find(review.worker_id).name
+        %p= review.name
+        %p= review.description
+        %p= "#{time_ago_in_words review.created_at} ago"
+
+-#.container

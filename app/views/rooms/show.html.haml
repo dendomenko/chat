@@ -1,0 +1,11 @@
+%h1.text-center AntHill! chat:
+.data
+  #phones
+    = render @phones
+  #messages.center-block.block{:tabindex => "3"}
+    = render @messages
+  %br/
+  .center-block.form-group.block
+    %form.text-center{:role => "form"}
+      %input#msg.form-control{"data-behavior" => "room_speaker", :tabindex => "1", :type => "text"}/
+      %button#send.btn.w20.btn-success.btn-md{:tabindex => "2"} SEND

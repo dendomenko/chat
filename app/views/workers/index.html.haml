@@ -1,0 +1,21 @@
+= render 'layouts/header'
+%h1.text-center Workers
+.container
+  %table.table
+    %thead
+      %tr
+        %th Name
+        %th Surname
+        %th Phone
+        %th{:colspan => "2"}
+    %tbody
+      - @workers.each do |worker|
+        %tr
+          %td= worker.name
+          %td= worker.surname
+          %td= worker.phone
+          %td= link_to 'Show', worker, class: 'btn btn-sm btn-default'
+          %td= link_to 'Edit', edit_worker_path(worker), class: 'btn btn-sm btn-default'
+          %td= link_to 'Destroy', worker, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-sm btn-default'
+  %br/
+  = link_to 'New Worker', new_worker_path ,class: 'btn btn-default'

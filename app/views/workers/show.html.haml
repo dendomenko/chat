@@ -1,0 +1,9 @@
+= render 'layouts/header'
+%h1.text-center= "#{@worker.surname} #{@worker.name}"
+%p#notice.text-center.text-success= notice
+.container
+  %p
+    %span.glyphicon.glyphicon-phone
+    Phone number:
+    \#{@worker.phone}
+  = link_to 'Back', workers_path, class: 'btn btn-default'
